@@ -1,0 +1,66 @@
+@use "../../styles/partials/variables" as *;
+
+.skills {
+    padding: 0 0 50px 0;
+    position: relative;
+
+    &__box {
+        background: $backgroundColor1;
+        border-radius: 64px;
+        text-align: center;
+        margin-top: -60px;
+    }
+
+    &__header {
+        padding-top: 20px;
+        font-size: 45px;
+        font-weight: 700;
+    }
+
+    &__description {
+        color: $textColor2;
+        font-size: 18px;
+        letter-spacing: 0.8px;
+        line-height: 1.5em;
+        margin: 14px 0 75px 0;
+    }
+
+    &__carousel {
+        width: 90%;
+        margin: 0 auto;
+
+        position: relative;
+    }
+
+    &__item {
+        // width: 150px;
+    }
+
+    &__item-image {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 15px auto;
+    }
+}
+
+// Override node_modules stylings for carousel
+.react-multiple-carousel {
+    &__arrow {
+        background-color: $backgroundColor2 !important;
+        &--left {
+            left: (calc(1% + 1px)) !important;
+        }
+
+        &--right {
+            right: (calc(1% + 1px)) !important;
+        }
+    }
+}
+
+.absolute-background-left {
+    top: 28%;
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    z-index: -4;
+}
