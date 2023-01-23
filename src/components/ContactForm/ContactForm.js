@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import "./ContactForm.scss";
+import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../../assets/images/contact-img.svg";
 
@@ -23,7 +24,43 @@ export default function ContactForm() {
         });
     };
 
-    const onButtonSubmit = () => {};
+    // Form Submission - ASYNC
+    const onButtonSubmit = async (e) => {
+        e.preventDefault();
+
+        // Changing button text
+        setButtonText("Sending....");
+
+        // Execute on verification - send the form contents to the back-end
+        let response = await fetch("http://localhost:6969/contact", {
+            method: "POST",
+            headers: {
+                "Content-Type": "Application/json;charset=utf-8",
+            },
+            body: JSON.stringify(formDetails),
+        });
+
+        // After sent, Change button back
+
+        setButtonText("Send");
+
+        // Execute on verification - store response into result variable
+        let result = await response.json();
+
+        // Reset form to initial state
+        // setFormDetails(formInitialDetails);
+
+        // Change the success/error message
+        if (result.code === 200) {
+            setStatus({ success: true, message: "Message sent successfully" });
+        } else {
+            console.log(result.status);
+            setStatus({
+                success: false,
+                message: "Something went Wrong. Please try again later.",
+            });
+        }
+    };
 
     return (
         <>
@@ -31,15 +68,23 @@ export default function ContactForm() {
                 <Container>
                     <Row className="contact-form__row">
                         <Col md={6}>
-                            <img src={contactImg} alt="Contact Me" />
+                            <img
+                                src={contactImg}
+                                alt="Contact Me"
+                                className="contact-form__hero"
+                            />
                         </Col>
                         <Col md={6}>
-                            <h2> Get In Touch With Me</h2>
+                            <h2 className="contact-form__header">
+                                {" "}
+                                Get In Touch With Me
+                            </h2>
                             <form onSubmit={onButtonSubmit}>
                                 <Row>
                                     <Col sm={6} className="px-1">
                                         <input
                                             type="text"
+                                            className="contact-form__input"
                                             value={formDetails.firstName}
                                             placeholder="First Name"
                                             onChange={(e) =>
@@ -53,6 +98,7 @@ export default function ContactForm() {
                                     <Col sm={6} className="px-1">
                                         <input
                                             type="text"
+                                            className="contact-form__input"
                                             value={formDetails.lastName}
                                             placeholder="Last Name"
                                             onChange={(e) =>
@@ -63,11 +109,15 @@ export default function ContactForm() {
                                             }
                                         />
                                     </Col>
-                                    <Col sm={6} className="px-1">
+                                    <Col
+                                        sm={6}
+                                        className="px-1 contact-form__email"
+                                    >
                                         <input
                                             type="email"
+                                            className="contact-form__input"
                                             value={formDetails.email}
-                                            placeholder="Email"
+                                            placeholder="Your Email"
                                             onChange={(e) =>
                                                 onFormUpdate(
                                                     "email",
@@ -76,38 +126,43 @@ export default function ContactForm() {
                                             }
                                         />
                                     </Col>
-                                    <Row>
-                                        <Col sm={6} className="px-1">
-                                            <textarea
-                                                row="6"
-                                                value={formDetails.message}
-                                                placeholder="Message"
-                                                onChange={(e) =>
-                                                    onFormUpdate(
-                                                        "message",
-                                                        e.target.value
-                                                    )
-                                                }
-                                            />
-                                            <button type="submit">
-                                                <span>{buttonText}</span>
-                                            </button>
-                                            {status.message && (
-                                                <Col>
-                                                    <p
-                                                        className={
-                                                            status.success ===
-                                                            false
-                                                                ? "danger"
-                                                                : "success"
-                                                        }
-                                                    >
-                                                        {status.message}
-                                                    </p>
-                                                </Col>
-                                            )}
-                                        </Col>
-                                    </Row>
+                                </Row>
+                                <Row>
+                                    <Col sm={12} className="px-1">
+                                        <textarea
+                                            row="6"
+                                            className="contact-form__message"
+                                            value={formDetails.message}
+                                            placeholder="Message"
+                                            onChange={(e) =>
+                                                onFormUpdate(
+                                                    "message",
+                                                    e.target.value
+                                                )
+                                            }
+                                        />
+                                        <button
+                                            type="submit"
+                                            className="contact-form__button"
+                                        >
+                                            <span className="contact-form__button-text">
+                                                {buttonText}
+                                            </span>
+                                        </button>
+                                        {status.message && (
+                                            <Col>
+                                                <p
+                                                    className={
+                                                        status.success === false
+                                                            ? "danger"
+                                                            : "success"
+                                                    }
+                                                >
+                                                    {status.message}
+                                                </p>
+                                            </Col>
+                                        )}
+                                    </Col>
                                 </Row>
                             </form>
                         </Col>
