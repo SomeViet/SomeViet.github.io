@@ -77,17 +77,27 @@ export default function NavBar() {
                     </Nav>
                     <span className="navbar-social">
                         <div className="navbar-social__container">
-                            <a href="/" className="navbar-social__link">
+                            <a
+                                href="https://www.linkedin.com/in/kevin-anh-tran/"
+                                className="navbar-social__link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 <img
                                     src={navIcon1}
-                                    alt=""
+                                    alt="linkedin"
                                     className="navbar-social__link-image"
                                 />
                             </a>
-                            <a href="/" className="navbar-social__link">
+                            <a
+                                href="https://github.com/SomeViet"
+                                className="navbar-social__link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 <img
                                     src={navIcon2}
-                                    alt=""
+                                    alt="github"
                                     className="navbar-social__link-image"
                                 />
                             </a>

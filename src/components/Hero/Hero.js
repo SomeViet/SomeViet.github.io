@@ -87,17 +87,16 @@ export default function Hero() {
                                 </span>
                             </h1>
                             <p className="hero__about-me">
-                                "Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur. Excepteur sint
-                                occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est
-                                laborum."
+                                As a junior software developer, I am constantly
+                                striving to improve my skills and knowledge of
+                                new technologies. On this website, you will find
+                                a selection of my projects and accomplishments
+                                so far, as well as my current skills and areas
+                                of interest. I am currently open to new job
+                                offers and collaborations. Please take a look
+                                around and don't hesitate to contact me if you
+                                have any questions or would like to discuss a
+                                potential project or job opportunity.
                             </p>
 
                             <a href="#connect" className="hero__connect">

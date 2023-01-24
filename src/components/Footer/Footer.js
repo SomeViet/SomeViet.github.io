@@ -25,17 +25,27 @@ export default function Footer() {
                             className="text-center text-sm-end"
                         >
                             <div className="footer__social">
-                                <a href="/" className="footer__link">
+                                <a
+                                    href="https://www.linkedin.com/in/kevin-anh-tran/"
+                                    className="footer__link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     <img
                                         src={footerIcon1}
-                                        alt="social"
+                                        alt="linkedin"
                                         className="footer__link-image"
                                     />
                                 </a>
-                                <a href="/" className="footer__link">
+                                <a
+                                    href="https://github.com/SomeViet"
+                                    className="footer__link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     <img
                                         src={footerIcon2}
-                                        alt="social"
+                                        alt="github"
                                         className="footer__link-image"
                                     />
                                 </a>
@@ -43,7 +53,7 @@ export default function Footer() {
                         </Col>
                     </Row>
                     <p className="footer__copyright">
-                        Copyright 2022. All Rights Reserved
+                        Copyright 2023. All Rights Reserved.
                     </p>
                 </Container>
             </footer>

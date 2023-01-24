@@ -13,26 +13,31 @@ export default function Projects() {
             title: "Project1",
             description: "This is project1",
             imgURL: projectimage1,
+            link: "https://sv-portfolio-task-list.onrender.com/",
         },
         {
             title: "Project2",
             description: "This is project2",
             imgURL: projectimage2,
+            link: "https://sv-portfolio-task-list.onrender.com/",
         },
         {
             title: "Project3",
             description: "This is project3",
             imgURL: projectimage3,
+            link: "https://sv-portfolio-task-list.onrender.com/",
         },
         {
             title: "Project4",
             description: "This is project4",
             imgURL: projectimage1,
+            link: "https://sv-portfolio-task-list.onrender.com/",
         },
         {
             title: "Project5",
             description: "This is project5",
             imgURL: projectimage2,
+            link: "https://sv-portfolio-task-list.onrender.com/",
         },
     ];
 
