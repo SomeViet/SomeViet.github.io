@@ -7,6 +7,7 @@ import projectbrainflix from "../../assets/images/project-brainflix.png";
 import projecthungry from "../../assets/images/project-hungry.png";
 import projectportfolio from "../../assets/images/project-portfolio.png";
 import projectbandsite from "../../assets/images/project-bandsite.png";
+import projecttravelsite from "../../assets/images/project-travelsite.png";
 import colorSharp2 from "../../assets/images/color-sharp2.png";
 
 export default function Projects() {
@@ -46,6 +47,13 @@ export default function Projects() {
                 "A Bandsite Biography mock-up to apply the SASS and Flexbox knowledge we learned. Minimal Javascript",
             imgURL: projectbandsite,
             link: "https://sv-brainstation-bandsite.onrender.com",
+        },
+        {
+            title: "TravelSite",
+            description:
+                "My first project. Completed in May 2022. Uploaded to showcase the evolution of my learning during my Part-Time Web Development Journey. Only HTML and CSS",
+            imgURL: projecttravelsite,
+            link: "https://sv-brainstation-travel-site.onrender.com",
         },
     ];
 
