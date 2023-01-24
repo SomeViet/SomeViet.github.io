@@ -10,7 +10,7 @@ export default function Projects() {
     // List of projects
     const projects = [
         {
-            title: "Project1",
+            title: "Project1111",
             description: "This is project1",
             imgURL: projectimage1,
             link: "https://sv-portfolio-task-list.onrender.com/",

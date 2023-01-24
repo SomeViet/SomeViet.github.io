@@ -4,9 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../../assets/images/contact-img.svg";
 import axios from "axios";
 
-const SITE = process.env.REACT_APP_SERVER_URL;
-
-export default function ContactForm() {
+export default function ContactForm({ SITE }) {
     const formInitialDetails = {
         firstName: "",
         lastName: "",
@@ -39,7 +37,7 @@ export default function ContactForm() {
                 // console.log(e);
                 return;
             });
-    });
+    }, []);
 
     // Form Submission - ASYNC
     const onButtonSubmit = async (e) => {

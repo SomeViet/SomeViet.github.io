@@ -9,6 +9,8 @@ import {
     Footer,
 } from "./components";
 
+const SITE = process.env.REACT_APP_SERVER_URL;
+
 function App() {
     return (
         <div className="App">
@@ -16,7 +18,7 @@ function App() {
             <Hero />
             <Skills />
             <Projects />
-            <ContactForm />
+            <ContactForm SITE={SITE} />
             <Footer />
         </div>
     );
