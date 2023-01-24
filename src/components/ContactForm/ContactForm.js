@@ -1,7 +1,10 @@
 import "./ContactForm.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../../assets/images/contact-img.svg";
+import axios from "axios";
+
+const SITE = process.env.REACT_APP_SERVER_URL;
 
 export default function ContactForm() {
     const formInitialDetails = {
@@ -24,6 +27,20 @@ export default function ContactForm() {
         });
     };
 
+    // Ping the back-end server on mount to wake onRender idle protocol
+    useEffect(() => {
+        axios
+            .get(`${SITE}`)
+            .then((response) => {
+                console.log(response.data);
+                return;
+            })
+            .catch((e) => {
+                // console.log(e);
+                return;
+            });
+    });
+
     // Form Submission - ASYNC
     const onButtonSubmit = async (e) => {
         e.preventDefault();
@@ -40,7 +57,7 @@ export default function ContactForm() {
             setButtonText("Sending....");
 
             // Execute on verification - send the form contents to the back-end
-            let response = await fetch("http://localhost:6969/contact", {
+            let response = await fetch(`${SITE}/contact`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "Application/json;charset=utf-8",
