@@ -34,7 +34,7 @@
     }
 
     &__about-me {
-        color: #b8b8b8;
+        color: $textColor2;
         font-size: 18px;
         letter-spacing: 0.8px;
         line-height: 1.5em;
@@ -42,15 +42,20 @@
     }
 
     &__connect {
-        color: #fff;
-        font-weight: 700;
-        font-size: 20px;
+        text-decoration: none;
+        display: inline-flex;
         margin-top: 40px;
-        letter-spacing: 0.8px;
-        display: flex;
-        align-items: center;
-        background-color: transparent;
-        border: 0px;
+
+        &-button {
+            color: $textColor1;
+            font-weight: 700;
+            font-size: 20px;
+            letter-spacing: 0.8px;
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            border: 0px;
+        }
 
         svg {
             font-size: 25px;

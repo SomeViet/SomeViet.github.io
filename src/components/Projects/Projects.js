@@ -1,10 +1,10 @@
 import "./Projects.scss";
 import { Row, Col, Container, Nav, Tab } from "react-bootstrap";
 import { ProjectCard } from "../index";
-import colorSharp2 from "../../assets/images/color-sharp2.png";
 import projectimage1 from "../../assets/images/project-img1.png";
 import projectimage2 from "../../assets/images/project-img2.png";
 import projectimage3 from "../../assets/images/project-img3.png";
+import colorSharp2 from "../../assets/images/color-sharp2.png";
 
 export default function Projects() {
     // List of projects
@@ -116,7 +116,6 @@ export default function Projects() {
                         </Col>
                     </Row>
                 </Container>
-                {/* background for the footer */}
                 <img
                     className="absolute-background-right"
                     src={colorSharp2}

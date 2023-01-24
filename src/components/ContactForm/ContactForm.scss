@@ -1,8 +1,17 @@
 @use "../../styles/partials/variables" as *;
 
 .contact-form {
-    background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
-    padding: 60px 0 200px 0;
+    background: transparent;
+    padding: 0px 0 50px 0;
+
+    position: relative;
+
+    &__box {
+        padding: 60px;
+        border-radius: 64px;
+        background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+        margin-top: -50px;
+    }
 
     &__hero {
         width: 92%;
@@ -45,7 +54,7 @@
         &::placeholder {
             font-size: 16px;
             font-weight: 400;
-            color: #fff;
+            color: $textColor1;
         }
     }
 
@@ -55,8 +64,8 @@
 
     &__button {
         font-weight: 700;
-        color: #000;
-        background-color: #fff;
+        color: $textColor3;
+        background-color: $backgroundColor4;
         padding: 14px 48px;
         font-size: 18px;
         margin-top: 25px;
@@ -74,7 +83,7 @@
 
         &::before {
             content: "";
-            background: #121212;
+            background: $backgroundColor1;
             width: 0;
             height: 100%;
             position: absolute;

@@ -20,7 +20,7 @@ export default function Hero() {
         "your next hire!",
     ];
     // eslint-disable-next-line no-unused-vars
-    const [errorLooper, setErrorLooper] = useState(0);
+    // const [errorLooper, setErrorLooper] = useState(0);
 
     useEffect(() => {
         // Set an interval for the typing animation
@@ -99,13 +99,12 @@ export default function Hero() {
                                 qui officia deserunt mollit anim id est
                                 laborum."
                             </p>
-                            {/* Connect Let's connect function later. */}
-                            <button
-                                className="hero__connect"
-                                onClick={() => console.log("connect")}
-                            >
-                                Let's Connect <ArrowRightCircle size={25} />
-                            </button>
+
+                            <a href="#connect" className="hero__connect">
+                                <button className="hero__connect-button">
+                                    Let's Connect <ArrowRightCircle size={25} />
+                                </button>
+                            </a>
                         </Col>
                         <Col xs={12} md={6} xl={5}>
                             <img

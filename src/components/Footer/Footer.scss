@@ -1,0 +1,31 @@
+@use "../NavBar/NavBar.scss" as *;
+@use "../../styles/partials/variables" as *;
+
+.footer {
+    padding: 0 0 20px 0;
+
+    &__row {
+        align-items: center;
+    }
+
+    &__logo {
+        width: 20%;
+    }
+
+    &__link {
+        @extend .navbar-social__link;
+    }
+
+    &__link-image {
+        @extend .navbar-social__link-image;
+    }
+
+    &__copyright {
+        font-weight: 400;
+        font-size: 14px;
+        color: $textColor2;
+        letter-spacing: 0.5px;
+        margin-top: 20px;
+        text-align: end;
+    }
+}

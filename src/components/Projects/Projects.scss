@@ -1,7 +1,7 @@
 @use "../../styles/partials/variables" as *;
 
 .projects {
-    padding: 80px 0;
+    padding: 60px 0 100px 0;
     position: relative;
     background-color: $backgroundColor3;
 
@@ -92,11 +92,10 @@
 
 // Background stylings that flow into the footer
 .absolute-background-right {
-    border: 1px solid red;
     top: 20%;
     position: absolute;
     bottom: 0;
-    width: 35%;
+    width: 62%;
     right: 0;
     z-index: -4;
 }

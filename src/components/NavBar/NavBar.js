@@ -93,11 +93,13 @@ export default function NavBar() {
                             </a>
                         </div>
 
-                        <button className="navbar-social__connect">
-                            <span className="navbar-social__connect-text">
-                                Let’s Connect
-                            </span>
-                        </button>
+                        <a href="#connect" className="navbar-social__connect">
+                            <button className="navbar-social__connect-button">
+                                <span className="navbar-social__connect-button-text">
+                                    Let’s Connect
+                                </span>
+                            </button>
+                        </a>
                     </span>
                 </Navbar.Collapse>
             </Container>

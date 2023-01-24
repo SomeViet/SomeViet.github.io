@@ -72,7 +72,7 @@
             transition: 0.3s ease-in-out;
         }
 
-        &:hover .navbar-social__link-image {
+        &:hover img {
             filter: brightness(0) saturate(100%) invert(0%) sepia(7%)
                 saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
         }
@@ -85,19 +85,15 @@
     }
 
     &__connect {
-        font-weight: 700;
-        color: #fff;
-        border: 1px solid #fff;
-        padding: 18px 34px;
-        font-size: 18px;
-        margin-left: 18px;
-        position: relative;
-        background-color: transparent;
+        text-decoration: none;
         transition: 0.3s ease-in-out;
-
-        &-text {
-            z-index: 1;
-        }
+        border: 1px solid #fff;
+        padding: 14px 34px;
+        background-color: transparent;
+        margin-left: 18px;
+        margin: 8px 0 8px 18px;
+        transition: 0.3s ease-in-out;
+        position: relative;
 
         &::before {
             content: "";
@@ -111,15 +107,29 @@
             transition: 0.3s ease-in-out;
         }
 
-        &:hover {
-            color: #121212;
-        }
-
         &:hover::before {
             content: "";
             width: 100%;
             height: 100%;
             position: absolute;
+        }
+
+        &-button {
+            color: #fff;
+            border: 0px;
+            font-weight: 700;
+            font-size: 18px;
+            position: relative;
+            background-color: transparent;
+            transition: 0.3s ease-in-out;
+
+            &-text {
+                z-index: 1;
+            }
+        }
+
+        &:hover button {
+            color: #121212;
         }
     }
 }
@@ -137,43 +147,45 @@
     }
 }
 
-nav.navbar .navbar-toggler-icon {
-    width: 24px;
-    height: 17px;
-    background-image: none;
-    position: relative;
-    border-bottom: 2px solid #fff;
-    transition: all 300ms linear;
-    top: -2px;
-}
-nav.navbar .navbar-toggler-icon:focus {
-    border-bottom: 2px solid #fff;
-}
-nav.navbar .navbar-toggler-icon:after,
-nav.navbar .navbar-toggler-icon:before {
-    width: 24px;
-    position: absolute;
-    height: 2px;
-    background-color: #fff;
-    top: 0;
-    left: 0;
-    content: "";
-    z-index: 2;
-    transition: all 300ms linear;
-}
-nav.navbar .navbar-toggler-icon:after {
-    top: 8px;
-}
-nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
-    transform: rotate(45deg);
-    background-color: #fff;
-    height: 2px;
-}
-nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
-    transform: translateY(8px) rotate(-45deg);
-    background-color: #fff;
-    height: 2px;
-}
-nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-    border-color: transparent;
-}
+// To-do - Refactor mobile responsiveness for toggler
+
+// nav.navbar .navbar-toggler-icon {
+//     width: 24px;
+//     height: 17px;
+//     background-image: none;
+//     position: relative;
+//     border-bottom: 2px solid #fff;
+//     transition: all 300ms linear;
+//     top: -2px;
+// }
+// nav.navbar .navbar-toggler-icon:focus {
+//     border-bottom: 2px solid #fff;
+// }
+// nav.navbar .navbar-toggler-icon:after,
+// nav.navbar .navbar-toggler-icon:before {
+//     width: 24px;
+//     position: absolute;
+//     height: 2px;
+//     background-color: #fff;
+//     top: 0;
+//     left: 0;
+//     content: "";
+//     z-index: 2;
+//     transition: all 300ms linear;
+// }
+// nav.navbar .navbar-toggler-icon:after {
+//     top: 8px;
+// }
+// nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+//     transform: rotate(45deg);
+//     background-color: #fff;
+//     height: 2px;
+// }
+// nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+//     transform: translateY(8px) rotate(-45deg);
+//     background-color: #fff;
+//     height: 2px;
+// }
+// nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+//     border-color: transparent;
+// }
