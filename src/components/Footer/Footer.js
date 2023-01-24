@@ -1,6 +1,6 @@
 import "./Footer.scss";
 import { Row, Col, Container } from "react-bootstrap";
-import portfolioLogo from "../../assets/images/logo.svg";
+import portfolioLogo from "../../assets/images/logo.png";
 import footerIcon1 from "../../assets/images/nav-icon1.svg";
 import footerIcon2 from "../../assets/images/nav-icon2.svg";
 

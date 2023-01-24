@@ -5,11 +5,19 @@ import projectcalculator from "../../assets/images/project-calculator.png";
 import projecttasklist from "../../assets/images/project-task-list.png";
 import projectbrainflix from "../../assets/images/project-brainflix.png";
 import projecthungry from "../../assets/images/project-hungry.png";
+import projectportfolio from "../../assets/images/project-portfolio.png";
+import projectbandsite from "../../assets/images/project-bandsite.png";
 import colorSharp2 from "../../assets/images/color-sharp2.png";
 
 export default function Projects() {
     // List of projects
     const projects = [
+        {
+            title: "This Portfolio Site!",
+            description: "A site showcasing all my projects and skills",
+            imgURL: projectportfolio,
+            link: "https://someviet.github.io/",
+        },
         {
             title: "A Calculator",
             description: "A Simple React Calculator",
@@ -32,6 +40,13 @@ export default function Projects() {
             imgURL: projectbrainflix,
             link: "https://sv-portfolio-task-list.onrender.com/",
         },
+        {
+            title: "BandSite",
+            description:
+                "A Bandsite Biography mock-up to apply the SASS and Flexbox knowledge we learned. Minimal Javascript",
+            imgURL: projectbandsite,
+            link: "https://sv-brainstation-bandsite.onrender.com",
+        },
     ];
 
     const other_projects = [
@@ -52,10 +67,14 @@ export default function Projects() {
                         <Col>
                             <h2 className="projects__header">Projects</h2>
                             <p className="projects__description">
-                                "Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
+                                A showcase of my personal projects that
+                                demonstrate the skills and technologies I have
+                                learned. Projects range from basic web
+                                development, programming languages, and more.
+                                These projects not only reflect my technical
+                                expertise but also my drive to continuously
+                                learn and improve in the constantly evolving
+                                field of software development
                             </p>
                             <Tab.Container
                                 id="projects-tabs"
@@ -68,7 +87,7 @@ export default function Projects() {
                                 >
                                     <Nav.Item>
                                         <Nav.Link eventKey="first">
-                                            Self-Taught
+                                            On-Going
                                         </Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
