@@ -37,7 +37,7 @@ export default function ContactForm({ SITE }) {
                 // console.log(e);
                 return;
             });
-    }, []);
+    }, [SITE]);
 
     // Form Submission - ASYNC
     const onButtonSubmit = async (e) => {

@@ -39,17 +39,20 @@ export default function Skills() {
                             <div className="skills__box">
                                 <h2 className="skills__header">Skills</h2>
                                 <p className="skills__description">
-                                    "Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                    Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip
-                                    ex ea commodo consequat. Duis aute irure
-                                    dolor in reprehenderit in voluptate velit
-                                    esse cillum dolore eu fugiat nulla pariatur.
-                                    Excepteur sint occaecat cupidatat non
-                                    proident, sunt in culpa qui officia deserunt
-                                    mollit anim id est laborum."
+                                    Skilled in building dynamic user interfaces
+                                    using JavaScript and ReactJS and creating
+                                    efficient back-end systems using Node.JS,
+                                    Express, Knex.js and MySQL.
+                                </p>
+                                <p className="skills__description">
+                                    From my Accounting background, I also have
+                                    strong analytical and problem-solving
+                                    skills, attention to detail and ability to
+                                    work under pressure. I can also communicate
+                                    and collaborate productively and am able to
+                                    work effectively in a team environment. Fast
+                                    learner, dedicated to improving my skills
+                                    and delivering exceptional results.
                                 </p>
                                 <Carousel
                                     responsive={responsive}

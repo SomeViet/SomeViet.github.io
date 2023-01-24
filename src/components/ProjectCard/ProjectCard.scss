@@ -10,6 +10,7 @@
         overflow: hidden;
         margin-bottom: 24px;
         color: $textColor1;
+        height: 200px;
 
         &::before {
             content: "";
@@ -28,6 +29,12 @@
         &:hover::before {
             height: 100%;
         }
+    }
+
+    &__image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     &__overlay {

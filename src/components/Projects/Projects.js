@@ -1,43 +1,46 @@
 import "./Projects.scss";
 import { Row, Col, Container, Nav, Tab } from "react-bootstrap";
 import { ProjectCard } from "../index";
-import projectimage1 from "../../assets/images/project-img1.png";
-import projectimage2 from "../../assets/images/project-img2.png";
-import projectimage3 from "../../assets/images/project-img3.png";
+import projectcalculator from "../../assets/images/project-calculator.png";
+import projecttasklist from "../../assets/images/project-task-list.png";
+import projectbrainflix from "../../assets/images/project-brainflix.png";
+import projecthungry from "../../assets/images/project-hungry.png";
 import colorSharp2 from "../../assets/images/color-sharp2.png";
 
 export default function Projects() {
     // List of projects
     const projects = [
         {
-            title: "Project1111",
-            description: "This is project1",
-            imgURL: projectimage1,
-            link: "https://sv-portfolio-task-list.onrender.com/",
+            title: "A Calculator",
+            description: "A Simple React Calculator",
+            imgURL: projectcalculator,
+            link: "https://sv-portfolio-calculator.onrender.com/",
         },
         {
-            title: "Project2",
-            description: "This is project2",
-            imgURL: projectimage2,
+            title: "A Task List",
+            description: "A basic task list using locally hosted memory",
+            imgURL: projecttasklist,
             link: "https://sv-portfolio-task-list.onrender.com/",
         },
+    ];
+
+    const brainstation_projects = [
         {
-            title: "Project3",
-            description: "This is project3",
-            imgURL: projectimage3,
+            title: "Brainflix",
+            description:
+                "A YouTube/Netflix Clone built to demonstrate state/dynamic routing and accessing a back-end",
+            imgURL: projectbrainflix,
             link: "https://sv-portfolio-task-list.onrender.com/",
         },
+    ];
+
+    const other_projects = [
         {
-            title: "Project4",
-            description: "This is project4",
-            imgURL: projectimage1,
-            link: "https://sv-portfolio-task-list.onrender.com/",
-        },
-        {
-            title: "Project5",
-            description: "This is project5",
-            imgURL: projectimage2,
-            link: "https://sv-portfolio-task-list.onrender.com/",
+            title: "I AM HUNGRY",
+            description:
+                "A mock interface improvement over UberEats or Skip the Dishes - currently disabled due to Google Maps Free trial expiring",
+            imgURL: projecthungry,
+            link: "https://sv-portfolio-hungry.onrender.com/",
         },
     ];
 
@@ -94,26 +97,30 @@ export default function Projects() {
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="second">
                                         <Row>
-                                            {projects.map((project, index) => {
-                                                return (
-                                                    <ProjectCard
-                                                        key={index}
-                                                        {...project}
-                                                    />
-                                                );
-                                            })}
+                                            {brainstation_projects.map(
+                                                (project, index) => {
+                                                    return (
+                                                        <ProjectCard
+                                                            key={index}
+                                                            {...project}
+                                                        />
+                                                    );
+                                                }
+                                            )}
                                         </Row>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="third">
                                         <Row>
-                                            {projects.map((project, index) => {
-                                                return (
-                                                    <ProjectCard
-                                                        key={index}
-                                                        {...project}
-                                                    />
-                                                );
-                                            })}
+                                            {other_projects.map(
+                                                (project, index) => {
+                                                    return (
+                                                        <ProjectCard
+                                                            key={index}
+                                                            {...project}
+                                                        />
+                                                    );
+                                                }
+                                            )}
                                         </Row>
                                     </Tab.Pane>
                                 </Tab.Content>
