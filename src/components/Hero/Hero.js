@@ -105,7 +105,7 @@ export default function Hero() {
                                 </button>
                             </a>
                         </Col>
-                        <Col xs={12} md={6} xl={5}>
+                        <Col xs={12} md={6} xl={5} className="hero__right">
                             <img
                                 src={heroImage}
                                 alt="Hero"
