@@ -8,6 +8,8 @@ import nodejsimage from "../../assets/images/nodejs.svg";
 import expressimage from "../../assets/images/express.svg";
 import kneximage from "../../assets/images/knex.svg";
 import colorSharp from "../../assets/images/color-sharp.png";
+import htmlimage from "../../assets/images/html.svg";
+import cssimage from "../../assets/images/css.svg";
 
 export default function Skills() {
     const responsive = {
@@ -60,6 +62,22 @@ export default function Skills() {
                                     className="skills__carousel"
                                 >
                                     <div className="skills__item">
+                                        <img
+                                            src={htmlimage}
+                                            alt="Skills"
+                                            className="skills__item-image"
+                                        />
+                                        <h5 className="skills__item-text">
+                                            HTML
+                                        </h5>
+                                        <img
+                                            src={cssimage}
+                                            alt="Skills"
+                                            className="skills__item-image"
+                                        />
+                                        <h5 className="skills__item-text">
+                                            CSS
+                                        </h5>
                                         <img
                                             src={javascriptimage}
                                             alt="Skills"
