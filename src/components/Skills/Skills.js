@@ -10,6 +10,13 @@ import kneximage from "../../assets/images/knex.svg";
 import colorSharp from "../../assets/images/color-sharp.png";
 import htmlimage from "../../assets/images/html.svg";
 import cssimage from "../../assets/images/css.svg";
+import reduximage from "../../assets/images/redux.svg";
+import vscodeimage from "../../assets/images/vscode.svg";
+import gitimage from "../../assets/images/git.svg";
+import postmanimage from "../../assets/images/postman.svg";
+import passportimage from "../../assets/images/passport.svg";
+import axiosimage from "../../assets/images/axios.png";
+import mysqlimage from "../../assets/images/mysql.svg";
 
 export default function Skills() {
     const responsive = {
@@ -70,6 +77,8 @@ export default function Skills() {
                                         <h5 className="skills__item-text">
                                             HTML
                                         </h5>
+                                    </div>
+                                    <div className="skills__item">
                                         <img
                                             src={cssimage}
                                             alt="Skills"
@@ -78,6 +87,8 @@ export default function Skills() {
                                         <h5 className="skills__item-text">
                                             CSS
                                         </h5>
+                                    </div>
+                                    <div className="skills__item">
                                         <img
                                             src={javascriptimage}
                                             alt="Skills"
@@ -95,6 +106,26 @@ export default function Skills() {
                                         />
                                         <h5 className="skills__item-text">
                                             React
+                                        </h5>
+                                    </div>
+                                    <div className="skills__item">
+                                        <img
+                                            src={axiosimage}
+                                            alt="Skills"
+                                            className="skills__item-image"
+                                        />
+                                        <h5 className="skills__item-text">
+                                            Axios
+                                        </h5>
+                                    </div>
+                                    <div className="skills__item">
+                                        <img
+                                            src={reduximage}
+                                            alt="Skills"
+                                            className="skills__item-image"
+                                        />
+                                        <h5 className="skills__item-text">
+                                            Redux
                                         </h5>
                                     </div>
                                     <div className="skills__item">
@@ -125,6 +156,56 @@ export default function Skills() {
                                         />
                                         <h5 className="skills__item-text">
                                             Express
+                                        </h5>
+                                    </div>
+                                    <div className="skills__item">
+                                        <img
+                                            src={passportimage}
+                                            alt="Skills"
+                                            className="skills__item-image"
+                                        />
+                                        <h5 className="skills__item-text">
+                                            Passport.js
+                                        </h5>
+                                    </div>
+                                    <div className="skills__item">
+                                        <img
+                                            src={mysqlimage}
+                                            alt="Skills"
+                                            className="skills__item-image"
+                                        />
+                                        <h5 className="skills__item-text">
+                                            MySQL
+                                        </h5>
+                                    </div>
+                                    <div className="skills__item">
+                                        <img
+                                            src={vscodeimage}
+                                            alt="Skills"
+                                            className="skills__item-image"
+                                        />
+                                        <h5 className="skills__item-text">
+                                            Visual Studio Code
+                                        </h5>
+                                    </div>
+                                    <div className="skills__item">
+                                        <img
+                                            src={gitimage}
+                                            alt="Skills"
+                                            className="skills__item-image"
+                                        />
+                                        <h5 className="skills__item-text">
+                                            Git
+                                        </h5>
+                                    </div>
+                                    <div className="skills__item">
+                                        <img
+                                            src={postmanimage}
+                                            alt="Skills"
+                                            className="skills__item-image"
+                                        />
+                                        <h5 className="skills__item-text">
+                                            Postman
                                         </h5>
                                     </div>
                                 </Carousel>
